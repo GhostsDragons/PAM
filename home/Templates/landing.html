@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAM - Parents Arranged Matches</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* Customize the landing page styles here */
+      .bg-hero {
+        background-image: url("https://source.unsplash.com/featured/1280x720/?dating");
+      }
+
+      /* Add more custom styles as needed */
+    </style>
+  </head>
+
+  <body>
+    <header class="py-6 bg-blue-800">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="landing.html" class="text-white text-2xl font-semibold"
+          ><img
+            src="{%static 'logonew.png'%}"
+            alt="Your Logo"
+            style="
+              position: absolute;
+              top: 0%;
+              left: 0.1%;
+              width: 225px;
+              height: 80px;
+            "
+        /></a>
+        <nav class="space-x-4">
+          <a href="signup_page_pam.html" class="text-white hover:text-white"
+            >Signup</a
+          >
+          <a href="signin_page_pam.html" class="text-white hover:text-white"
+            >Login</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero bg-hero bg-cover bg-center py-24">
+      <div class="container mx-auto text-center">
+        <h1 class="text-white text-5xl font-bold mb-6">
+          Find Your Perfect Match
+        </h1>
+        <a
+          href="#"
+          class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-full"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <section class="features bg-white py-24">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="feature-card bg-blue-900 text-white p-8 rounded-lg shadow-xl flex flex-col items-center justify-center"
+        >
+          <div class="feature-icon text-4xl mb-4">
+            <i class="fas fa-search"></i>
+          </div>
+          <h2 class="text-2xl font-semibold mb-2">Parent Matchmaking</h2>
+          <p class="text-lg text-center">
+            Allow your parents to find potential matches for you.
+          </p>
+        </div>
+        <div
+          class="feature-card bg-blue-900 text-white p-8 rounded-lg shadow-xl flex flex-col items-center justify-center"
+        >
+          <div class="feature-icon text-4xl mb-4">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h2 class="text-2xl font-semibold mb-2">Communication</h2>
+          <p class="text-lg text-center">
+            Easily communicate with potential matches through our platform.
+          </p>
+        </div>
+        <div
+          class="feature-card bg-blue-900 text-white p-8 rounded-lg shadow-xl flex flex-col items-center justify-center"
+        >
+          <div class="feature-icon text-4xl mb-4">
+            <i class="fas fa-users"></i>
+          </div>
+          <h2 class="text-2xl font-semibold mb-2">Match Verification</h2>
+          <p class="text-lg text-center">
+            Ensure the authenticity of matches with our verification process.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="individual-feature mt-16">
+      <div class="container mx-auto flex flex-col md:flex-row">
+        <div
+          class="individual-feature-text md:w-6/12 bg-white p-8 rounded-lg shadow-xl"
+        >
+          <h2 class="text-3xl font-semibold mb-4">Parent Matchmaking</h2>
+          <p class="text-lg mb-4">
+            Allow your parents to find potential matches for you. They can
+            search based on various criteria such as cast, religion, education,
+            and more. Our platform provides a secure and reliable way to find
+            compatible partners.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-full"
+            >Learn More</a
+          >
+        </div>
+        <div
+          class="individual-feature-image md:w-6/12 bg-cover bg-center rounded-lg"
+          style="
+            background-image: url('https://source.unsplash.com/featured/1280x720/?parent');
+          "
+        ></div>
+      </div>
+    </section>
+
+    <section class="individual-feature mt-16">
+      <div class="container mx-auto flex flex-col md:flex-row">
+        <div
+          class="individual-feature-image md:w-6/12 bg-cover bg-center rounded-lg"
+          style="
+            background-image: url('https://source.unsplash.com/featured/1280x720/?communication');
+          "
+        ></div>
+        <div
+          class="individual-feature-text md:w-6/12 bg-white p-8 rounded-lg shadow-xl"
+        >
+          <h2 class="text-3xl font-semibold mb-4">Communication</h2>
+          <p class="text-lg mb-4">
+            Our platform enables seamless communication with potential matches.
+            You can chat, video call, and exchange messages securely, building
+            connections in a safe environment. Get to know each other better
+            without the pressure of traditional dating!
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-full"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial py-24">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          class="testimonial-card bg-white p-8 rounded-lg shadow-xl flex flex-col justify-center items-center animate__animated animate__fadeIn"
+        >
+          <div class="mb-4">
+            <i class="fas fa-quote-left text-5xl text-blue-800"></i>
+          </div>
+          <p class="text-lg mb-4">
+            "PAM helped me find my soulmate. The process was smooth, and my
+            parents were actively involved in finding compatible matches."
+          </p>
+          <div class="text-gray-700 font-semibold">
+            <p class="mb-1">Mandar Rele</p>
+            <p>Data Analyst</p>
+          </div>
+        </div>
+        <div
+          class="testimonial-card bg-white p-8 rounded-lg shadow-xl flex flex-col justify-center items-center animate__animated animate__fadeIn"
+        >
+          <div class="mb-4">
+            <i class="fas fa-quote-left text-5xl text-blue-800"></i>
+          </div>
+          <p class="text-lg mb-4">
+            "I am grateful to PAM for bringing my spouse into my life. It's a
+            wonderful platform that respects traditional values while embracing
+            modern technology."
+          </p>
+          <div class="text-gray-700 font-semibold">
+            <p class="mb-1">Aditya Nair</p>
+            <p>Data Scientist - Big Money</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq py-24">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-semibold mb-8">Frequently Asked Questions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="faq-item">
+            <h3 class="text-xl font-semibold mb-3">
+              Can my parents use this website on my behalf?
+            </h3>
+            <p class="text-gray-700 mb-6">
+              Yes, PAM allows your parents to create an account and search for
+              potential matches on your behalf.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="text-xl font-semibold mb-3">Is the platform secure?</h3>
+            <p class="text-gray-700 mb-6">
+              We take security and privacy seriously. Our platform implements
+              industry-standard encryption and verification processes.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="text-xl font-semibold mb-3">
+              Can I communicate directly with the potential matches?
+            </h3>
+            <p class="text-gray-700 mb-6">
+              Yes, our platform provides seamless communication features,
+              including chat, messaging, and video calls.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3 class="text-xl font-semibold mb-3">How do I get started?</h3>
+            <p class="text-gray-700 mb-6">
+              Simply create an account and provide your preferences. Our
+              platform will start finding suitable matches for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team mt-16">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-semibold mb-8">Meet Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="team-member">
+            <img
+              src="{%static 'hari.png'%}"
+              alt="Team member photo"
+              class="rounded-full mb-2"
+            />
+            <h3 class="text-xl font-semibold mb-1">Hari Goyal</h3>
+            <p class="text-gray-700">Backend Developer</p>
+            <div class="social-links mt-2 space-x-2">
+              <a href="#" class="text-blue-600"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-blue-600"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-blue-600"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img
+              src="{%static 'vicks.png'%}"
+              alt="Team member photo"
+              class="rounded-full mb-2"
+            />
+            <h3 class="text-xl font-semibold mb-1">Vikramaditya Singhai</h3>
+            <p class="text-gray-700">Frontend Developer</p>
+            <div class="social-links mt-2 space-x-2">
+              <a href="#" class="text-blue-600"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-blue-600"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-blue-600"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map mt-16" id="map"></section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include any additional JS files here -->
+    <script>
+      // Add any necessary JS code or interactions here
+    </script>
+  </body>
+</html>

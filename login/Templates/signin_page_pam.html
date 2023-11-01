@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PAM - Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'login.css'%}" />
+
+  </head>
+  <body>
+    <div class="img">
+      <a href="landing.html">
+      <img src="{%static 'logonew.png'%}" alt="Your Logo" style="position: absolute; top: 0.5%; left: 0.1%; width: 225px; height: 80px;">
+      </a>
+    </div>
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post">
+        <div class="txtinput">
+          <input type="text" required />
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txtinput">
+          <input type="password" required />
+          <span></span>
+          <label>Password</label>
+        </div>
+          <div class="pass"><a href = "forgotpass.html">Forgot Password ?</a></div>
+          <button onclick="window.location.href = 'swiping.html';">Login</button>
+          <div class="signup_link">
+            Not A Member <a href="signup_page_pam.html"> Signup </a> To Join The Community !!!
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
