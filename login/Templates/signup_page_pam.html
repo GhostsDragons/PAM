@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PAM - Sign Up</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'login.css'%}" />
+  </head>
+  <body>
+    <div class="img">
+      <a href="landing.html">
+        <img
+          src="{%static 'logonew.png'%}"
+          alt="Your Logo"
+          style="
+            position: absolute;
+            top: 0.5%;
+            left: 0.1%;
+            width: 225px;
+            height: 80px;
+          "
+        />
+      </a>
+    </div>
+    <div class="center" style="transform: translate(190%, 20%)">
+      <h1>Sign Up</h1>
+      <form method="post">
+        <div class="txtinput">
+          <input type="text" required />
+          <span></span>
+          <label>Full Name</label>
+        </div>
+        <div class="txtinput">
+          <input type="email" required />
+          <span></span>
+          <label>Email</label>
+        </div>
+        <div class="txtinput">
+          <input type="tel" required />
+          <span></span>
+          <label>Phone Number</label>
+        </div>
+        <div class="txtinput">
+          <input type="password" required />
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="txtinput">
+          <input type="password" required />
+          <span></span>
+          <label>Confirm Password</label>
+        </div>
+        <a href="signin_page_pam.html">
+          <button onclick="window.location.href = 'signin_page_pam.html';">
+            Sign Up
+          </button>
+        </a>
+      </form>
+    </div>
+  </body>
+</html>

@@ -5,4 +5,3 @@ from django.shortcuts import render, HttpResponse
 
 def home(request):
     return render(request, "landing.html")
-    # return HttpResponse("This is homepage")
