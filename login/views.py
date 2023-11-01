@@ -11,5 +11,5 @@ def signup(request):
     return render(request, "signup_page_pam.html")
 
 
-def fgtpwd(request):
+def reset(request):
     return render(request, "forgot_password_pam.html")
