@@ -1,39 +1,45 @@
 .img {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: linear-gradient(120deg, #000A4A, #382D5F);
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 90%;
     max-width: 400px;
     background: white;
     border-radius: 10px;
-}
-.center h1{
     text-align: center;
-    padding: 15px 0 20px 0 ;
+}
+
+.center h1 {
+    text-align: center;
+    padding: 15px 0 20px 0;
     border-bottom: 1px solid #FF8800;
 }
-.center form{
+
+.center form {
     padding: 10px 40px;
     box-sizing: border-box;
 }
-form .txtinput{
+
+form .txtinput {
     position: relative;
     border-bottom: 2px solid black;
     margin: 40px 0;
 }
-.txtinput input{
+
+.txtinput input {
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -41,7 +47,8 @@ form .txtinput{
     border: none;
     outline: none;
 }
-.txtinput label{
+
+.txtinput label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -51,7 +58,8 @@ form .txtinput{
     pointer-events: none;
     transition: .5s;
 }
-.txtinput span::before{
+
+.txtinput span::before {
     content: '';
     position: absolute;
     top: 40px;
@@ -61,6 +69,7 @@ form .txtinput{
     background: #FF8800;
     transition: .5s;
 }
+
 .txtinput input:valid~label,
 .txtinput input:focus~label {
     top: -5px;
@@ -71,11 +80,13 @@ form .txtinput{
 .txtinput input:focus~span::before {
     width: 100%;
 }
-.pass{
+
+.pass {
     margin: -5px 0 20px 5px;
     color: #a6a6a6;
     cursor: pointer;
 }
+
 button {
     width: 100%;
     height: 50px;
@@ -88,7 +99,8 @@ button {
     cursor: pointer;
     outline: none;
 }
-.signup_link{
+
+.signup_link {
     margin: 30px 10px;
     text-align: center;
     color: #666666
