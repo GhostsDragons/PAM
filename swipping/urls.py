@@ -20,6 +20,6 @@ from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path("login/", include("login.urls")),
-    # path("", views.home, name="home"),
+    path("swipping/", views.swiping, name="matching"),
+
 ]
