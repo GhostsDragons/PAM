@@ -20,6 +20,6 @@ from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("swipping/", views.swiping, name="matching"),
+    path("", views.swipping, name="matching"),
 
 ]
