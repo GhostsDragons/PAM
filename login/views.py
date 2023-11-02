@@ -17,7 +17,7 @@ def login(request):
     #     if user is not None:
     #         login(request, user)
     #         return HttpResponse("loged in")
-    return render(request, "swipping_pam.html")
+    return render(request, "signin_page_pam.html")
     #     else:
     #         return render(request, "signin_page_pam.html")
     # else:
@@ -52,6 +52,5 @@ def reset(request):
     return render(request, "forgot_password_pam.html")
 
 
-@login_required(login_url="/")
 def home(request):
     return render(request, "swipping_pam.html")
