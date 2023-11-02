@@ -17,7 +17,7 @@ def login(request):
     #     if user is not None:
     #         login(request, user)
     #         return HttpResponse("loged in")
-    return render(request, "swipping_pam.html")
+    return render(request, "signin_page_pam.html")
     #     else:
     #         return render(request, "signin_page_pam.html")
     # else:

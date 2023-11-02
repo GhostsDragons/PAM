@@ -24,7 +24,7 @@
     </div>
     <div class="center">
       <h1>Sign Up</h1>
-      <form action="{%url 'signup'}" method="post">
+      <form method="post">
         {% csrf_token %}
         <div class="txtinput">
           <input type="text" name="username" required />
