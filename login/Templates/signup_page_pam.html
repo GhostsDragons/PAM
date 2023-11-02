@@ -24,7 +24,7 @@
     </div>
     <div class="center">
       <h1>Sign Up</h1>
-      <form action="/login/signup" method="post">
+      <form action="{%url 'signup'}" method="post">
         {% csrf_token %}
         <div class="txtinput">
           <input type="text" name="username" required />
@@ -50,6 +50,10 @@
           <input type="password" name="confirm" required />
           <span></span>
           <label>Confirm Password</label>
+        </div>
+                </div>
+        <div class="alreadylogin">
+          <a href="/login">Already Have An Account ?</a>
         </div>
         <a href="/login">
           <button>Sign up</button>
