@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 
@@ -12,7 +12,8 @@ def login(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return render(request, "swipping_pam.html")
+            return HttpResponse("loged in")
+            # return render(request, "swipping_pam.html")
         else:
             return render(request, "signin_page_pam.html")
     else:
