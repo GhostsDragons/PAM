@@ -21,6 +21,8 @@ def login(request):
 
 
 def signup(request):
+    if request.method == 'POST':
+        username = request.POST[""]
     return render(request, "signup_page_pam.html")
 
 

@@ -24,30 +24,30 @@
     </div>
     <div class="center">
       <h1>Sign Up</h1>
-      <form method="post">
+      <form action="{%url 'signup'}" method="post">
         {% csrf_token %}
         <div class="txtinput">
-          <input type="text" required />
+          <input type="text" name="username" required />
           <span></span>
           <label>Full Name</label>
         </div>
         <div class="txtinput">
-          <input type="text" required />
+          <input type="text" name="email" required />
           <span></span>
           <label>Email</label>
         </div>
         <div class="txtinput">
-          <input type="tel" required />
+          <input type="tel" name="phone" required />
           <span></span>
           <label>Phone Number</label>
         </div>
         <div class="txtinput">
-          <input type="password" required />
+          <input type="password" name="password" required />
           <span></span>
           <label>Password</label>
         </div>
         <div class="txtinput">
-          <input type="password" required />
+          <input type="password" name="confirm" required />
           <span></span>
           <label>Confirm Password</label>
         </div>
