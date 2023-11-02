@@ -16,6 +16,7 @@
     <div class="center">
       <h1>Login</h1>
       <form method="post">
+        {% csrf_token %}
         <div class="txtinput">
           <input type="text" required />
           <span></span>
@@ -27,7 +28,7 @@
           <label>Password</label>
         </div>
           <div class="pass"><a href = "/login/reset">Forgot Password ?</a></div>
-          <button onclick="window.location.href = '/swipping';">Login</button>
+          <button onclick="window.location.href = '/login/swipping';">Login</button>
           <div class="signup_link">
             Not A Member <a href="/login/signup"> Signup </a> To Join The Community !!!
           </div>

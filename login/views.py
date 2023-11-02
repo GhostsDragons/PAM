@@ -1,10 +1,20 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
 
 
 def login(request):
-    return render(request, "signin_page_pam.html")
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return render(request, "swipping_pam.html")
+        else:
+            return render(request, "signin_page_pam.html")
 
 
 def signup(request):
@@ -13,3 +23,8 @@ def signup(request):
 
 def reset(request):
     return render(request, "forgot_password_pam.html")
+
+
+@login_required(login_url="/")
+def home(request):
+    return render(request, "swipping_pam.html")
