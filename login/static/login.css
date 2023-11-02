@@ -70,6 +70,12 @@ form .txtinput {
     transition: .5s;
 }
 
+.txtinput input[type="email"]:valid~label,
+.txtinput input[type="email"]:focus~label {
+    top: -5px;
+    color: #ff8800;
+}
+
 .txtinput input:valid~label,
 .txtinput input:focus~label {
     top: -5px;
