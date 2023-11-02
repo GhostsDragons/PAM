@@ -15,6 +15,8 @@ def login(request):
             return render(request, "swipping_pam.html")
         else:
             return render(request, "signin_page_pam.html")
+    else:
+        return render(request, "signin_page_pam.html")
 
 
 def signup(request):
