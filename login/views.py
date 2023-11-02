@@ -52,6 +52,5 @@ def reset(request):
     return render(request, "forgot_password_pam.html")
 
 
-@login_required(login_url="/")
 def home(request):
     return render(request, "swipping_pam.html")
